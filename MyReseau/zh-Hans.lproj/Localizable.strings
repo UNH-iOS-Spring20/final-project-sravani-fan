@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  MyReseau
+
+  Created by nnYZ on 2020/4/30.
+  Copyright © 2020 biz. All rights reserved.
+*/
+
+"Home" = "首页";
+"Discover" = "发现";
+"My Letter" = "信件";
+"Profile" = "我的";
+"Massage" =  "写信";
+"Write down interesting things" = "写些您感兴趣的东西";
+"What do you want to say to others?" = "想对另一个人说些什么";

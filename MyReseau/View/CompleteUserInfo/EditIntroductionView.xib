@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EditIntroductionView" customModule="Fetlife" customModuleProvider="target">
+            <connections>
+                <outlet property="backgroundView" destination="qNH-u8-jLO" id="yWs-yo-tEw"/>
+                <outlet property="contentView" destination="ZGP-CB-YQz" id="gFY-4z-6s6"/>
+                <outlet property="textView" destination="SgK-hB-Fc9" id="UdX-Ye-IN1"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="qNH-u8-jLO">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZGP-CB-YQz">
+                    <rect key="frame" x="31" y="124" width="352" height="500"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Make a self introduction" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e9o-eg-Qbt">
+                            <rect key="frame" x="72.5" y="45" width="207.5" height="22"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e5e-yh-V8d">
+                            <rect key="frame" x="46" y="416" width="260" height="44"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="260" id="TP2-IZ-ElE"/>
+                                <constraint firstAttribute="height" constant="44" id="n41-Xm-cJP"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <state key="normal" title="Submit">
+                                <color key="titleColor" red="0.97647058819999999" green="0.5568627451" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="22"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="submitAction:" destination="-1" eventType="touchUpInside" id="FC8-Ch-jr6"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vdt-85-oTn">
+                            <rect key="frame" x="11" y="125" width="330" height="267"/>
+                            <subviews>
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="write something..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="SgK-hB-Fc9">
+                                    <rect key="frame" x="17" y="17" width="296" height="233"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="14"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </textView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstItem="SgK-hB-Fc9" firstAttribute="top" secondItem="Vdt-85-oTn" secondAttribute="top" constant="17" id="2fx-f2-wzf"/>
+                                <constraint firstItem="SgK-hB-Fc9" firstAttribute="leading" secondItem="Vdt-85-oTn" secondAttribute="leading" constant="17" id="Olt-oE-Aiu"/>
+                                <constraint firstAttribute="bottom" secondItem="SgK-hB-Fc9" secondAttribute="bottom" constant="17" id="UQa-Cu-cIe"/>
+                                <constraint firstAttribute="trailing" secondItem="SgK-hB-Fc9" secondAttribute="trailing" constant="17" id="dai-gp-3YE"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="14"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="Vdt-85-oTn" firstAttribute="top" secondItem="e9o-eg-Qbt" secondAttribute="bottom" constant="58" id="Dgx-6b-Shx"/>
+                        <constraint firstAttribute="height" constant="500" id="GJX-7q-Fs8"/>
+                        <constraint firstItem="Vdt-85-oTn" firstAttribute="leading" secondItem="ZGP-CB-YQz" secondAttribute="leading" constant="11" id="JHt-zD-MjY"/>
+                        <constraint firstItem="e9o-eg-Qbt" firstAttribute="centerX" secondItem="ZGP-CB-YQz" secondAttribute="centerX" id="KEw-rc-WU2"/>
+                        <constraint firstAttribute="bottom" secondItem="e5e-yh-V8d" secondAttribute="bottom" constant="40" id="bWh-k5-t4W"/>
+                        <constraint firstItem="e5e-yh-V8d" firstAttribute="top" secondItem="Vdt-85-oTn" secondAttribute="bottom" constant="24" id="bgq-FQ-Szi"/>
+                        <constraint firstAttribute="trailing" secondItem="Vdt-85-oTn" secondAttribute="trailing" constant="11" id="fb0-U6-boN"/>
+                        <constraint firstAttribute="width" constant="352" id="h8G-En-zHE"/>
+                        <constraint firstItem="e5e-yh-V8d" firstAttribute="centerX" secondItem="ZGP-CB-YQz" secondAttribute="centerX" id="tLH-he-pnA"/>
+                        <constraint firstItem="e9o-eg-Qbt" firstAttribute="top" secondItem="ZGP-CB-YQz" secondAttribute="top" constant="45" id="vv0-rt-ri2"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="ZGP-CB-YQz" firstAttribute="top" secondItem="gfV-XT-yZB" secondAttribute="top" constant="80" id="QVN-eg-GuZ"/>
+                <constraint firstItem="ZGP-CB-YQz" firstAttribute="centerX" secondItem="qNH-u8-jLO" secondAttribute="centerX" id="Yf7-81-miP"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="gfV-XT-yZB"/>
+            <point key="canvasLocation" x="272" y="-227"/>
+        </view>
+    </objects>
+</document>

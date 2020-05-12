@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EditreseauView" customModule="myreseau" customModuleProvider="target">
+            <connections>
+                <outlet property="backgroundView" destination="R9G-E6-nii" id="Wan-EF-pJs"/>
+                <outlet property="contentView" destination="2sG-Er-R8L" id="QtG-h5-eza"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="R9G-E6-nii">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2sG-Er-R8L">
+                    <rect key="frame" x="31" y="80" width="352" height="500"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I`ve been reseau for" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cKu-mk-UTj">
+                            <rect key="frame" x="89.5" y="65" width="173.5" height="22"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="cKu-mk-UTj" firstAttribute="centerX" secondItem="2sG-Er-R8L" secondAttribute="centerX" id="FQy-MV-GhL"/>
+                        <constraint firstAttribute="width" constant="352" id="KY3-Fa-ppK"/>
+                        <constraint firstItem="cKu-mk-UTj" firstAttribute="top" secondItem="2sG-Er-R8L" secondAttribute="top" constant="65" id="MXs-8g-kCx"/>
+                        <constraint firstAttribute="height" constant="500" id="aAm-yP-X1p"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="2sG-Er-R8L" firstAttribute="centerX" secondItem="R9G-E6-nii" secondAttribute="centerX" id="F49-89-QoL"/>
+                <constraint firstItem="2sG-Er-R8L" firstAttribute="top" secondItem="1Qg-Ss-78J" secondAttribute="top" constant="80" id="Xoz-HG-g27"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="1Qg-Ss-78J"/>
+            <point key="canvasLocation" x="10" y="5"/>
+        </view>
+    </objects>
+</document>

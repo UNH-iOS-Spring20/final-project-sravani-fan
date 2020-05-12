@@ -1,0 +1,12 @@
+
+/* Class = "UITextView"; text = "Write down interesting things"; ObjectID = "1yH-YX-3Bb"; */
+"1yH-YX-3Bb.text" = "Write down interesting things";
+
+/* Class = "UILabel"; text = "0/1000"; ObjectID = "DV6-5O-id8"; */
+"DV6-5O-id8.text" = "0/1000";
+
+/* Class = "UIButton"; normalTitle = "Send"; ObjectID = "LDU-rt-rW6"; */
+"LDU-rt-rW6.normalTitle" = "Send";
+
+/* Class = "UILabel"; text = "Massage"; ObjectID = "ZIV-oz-MLL"; */
+"ZIV-oz-MLL.text" = "Massage";

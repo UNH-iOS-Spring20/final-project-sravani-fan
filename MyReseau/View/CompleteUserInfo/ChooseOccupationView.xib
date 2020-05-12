@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChooseOccupationView" customModule="Fetlife" customModuleProvider="target">
+            <connections>
+                <outlet property="backgroundView" destination="ww7-M1-fNb" id="18e-Dd-8Ff"/>
+                <outlet property="contentView" destination="MpB-to-A0U" id="oBo-3Q-PN7"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="ww7-M1-fNb">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MpB-to-A0U">
+                    <rect key="frame" x="31" y="124" width="352" height="500"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choese your occupation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2cy-TJ-URH">
+                            <rect key="frame" x="71.5" y="35" width="209.5" height="21"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="2cy-TJ-URH" firstAttribute="top" secondItem="MpB-to-A0U" secondAttribute="top" constant="35" id="By1-Gi-BHM"/>
+                        <constraint firstAttribute="height" constant="500" id="eBV-AA-VQE"/>
+                        <constraint firstItem="2cy-TJ-URH" firstAttribute="centerX" secondItem="MpB-to-A0U" secondAttribute="centerX" id="fl2-Kl-fqh"/>
+                        <constraint firstAttribute="width" constant="352" id="leY-EF-C7Q"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="MpB-to-A0U" firstAttribute="centerX" secondItem="ww7-M1-fNb" secondAttribute="centerX" id="3Ts-Sa-aYu"/>
+                <constraint firstItem="MpB-to-A0U" firstAttribute="top" secondItem="gOS-nx-frK" secondAttribute="top" constant="80" id="J4f-al-Fth"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="gOS-nx-frK"/>
+            <point key="canvasLocation" x="-241" y="82"/>
+        </view>
+    </objects>
+</document>

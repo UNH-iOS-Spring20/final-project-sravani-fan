@@ -1,0 +1,12 @@
+
+/* Class = "UILabel"; text = "0/1000"; ObjectID = "PSD-lz-WKc"; */
+"PSD-lz-WKc.text" = "0/1000";
+
+/* Class = "UITextView"; text = "What do you want to say to others?"; ObjectID = "cce-gY-Bpe"; */
+"cce-gY-Bpe.text" = "What do you want to say to others?";
+
+/* Class = "UILabel"; text = "Reply"; ObjectID = "cn0-Bj-waV"; */
+"cn0-Bj-waV.text" = "Reply";
+
+/* Class = "UIButton"; normalTitle = "Send"; ObjectID = "otV-ZP-Mcp"; */
+"otV-ZP-Mcp.normalTitle" = "Send";

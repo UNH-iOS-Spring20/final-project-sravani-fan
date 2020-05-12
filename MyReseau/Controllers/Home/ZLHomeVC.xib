@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZLHomeVC" customModule="myreseau" customModuleProvider="target">
+            <connections>
+                <outlet property="searchButton" destination="0YU-lp-29S" id="ai0-nK-wZJ"/>
+                <outlet property="topEdge" destination="Mx5-UR-CTG" id="e9v-E4-FB3"/>
+                <outlet property="view" destination="BjG-aV-ZFO" id="C0J-mu-MwW"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="BjG-aV-ZFO">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Sn-Pz-2vd">
+                    <rect key="frame" x="14" y="55" width="41" height="41"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="41" id="ZBm-k1-VuF"/>
+                        <constraint firstAttribute="width" constant="41" id="y0b-U7-sV8"/>
+                    </constraints>
+                    <state key="normal" image="homeWriteIcon"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <real key="value" value="20.5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="writeAction:" destination="-1" eventType="touchUpInside" id="NVw-z4-W4b"/>
+                    </connections>
+                </button>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0YU-lp-29S">
+                    <rect key="frame" x="359" y="55" width="41" height="41"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="41" id="3gE-CX-5pn"/>
+                        <constraint firstAttribute="height" constant="41" id="bAO-uY-BfL"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <real key="value" value="20.5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="searchButtonAction:" destination="-1" eventType="touchUpInside" id="rxB-pE-S0S"/>
+                    </connections>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeSearchIcon" translatesAutoresizingMaskIntoConstraints="NO" id="cjJ-J9-tQE">
+                    <rect key="frame" x="369" y="65" width="21" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="21" id="8Hd-3h-0iU"/>
+                        <constraint firstAttribute="height" constant="21" id="IGb-Yw-IvS"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="groupcity" translatesAutoresizingMaskIntoConstraints="NO" id="9hZ-w0-mCr">
+                    <rect key="frame" x="0.0" y="211" width="414" height="436"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="9hZ-w0-mCr" secondAttribute="height" multiplier="375:395" id="jfs-09-C48"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.27058823529411763" green="0.74509803921568629" blue="0.792156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="5Sn-Pz-2vd" firstAttribute="top" secondItem="k0g-wt-uPg" secondAttribute="top" constant="11" id="Edm-HM-sRY"/>
+                <constraint firstItem="5Sn-Pz-2vd" firstAttribute="leading" secondItem="k0g-wt-uPg" secondAttribute="leading" constant="14" id="Fph-gC-NOu"/>
+                <constraint firstItem="9hZ-w0-mCr" firstAttribute="top" secondItem="k0g-wt-uPg" secondAttribute="top" constant="167" id="Mx5-UR-CTG"/>
+                <constraint firstItem="9hZ-w0-mCr" firstAttribute="leading" secondItem="k0g-wt-uPg" secondAttribute="leading" id="QEo-DY-er4"/>
+                <constraint firstItem="k0g-wt-uPg" firstAttribute="trailing" secondItem="9hZ-w0-mCr" secondAttribute="trailing" id="Z0j-bd-5gJ"/>
+                <constraint firstItem="k0g-wt-uPg" firstAttribute="trailing" secondItem="0YU-lp-29S" secondAttribute="trailing" constant="14" id="hBQ-TE-kMP"/>
+                <constraint firstItem="cjJ-J9-tQE" firstAttribute="centerY" secondItem="0YU-lp-29S" secondAttribute="centerY" id="oah-ne-jN7"/>
+                <constraint firstItem="cjJ-J9-tQE" firstAttribute="centerX" secondItem="0YU-lp-29S" secondAttribute="centerX" id="rWj-dV-wol"/>
+                <constraint firstItem="0YU-lp-29S" firstAttribute="top" secondItem="k0g-wt-uPg" secondAttribute="top" constant="11" id="y3o-M8-RQS"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="k0g-wt-uPg"/>
+            <point key="canvasLocation" x="137.68115942028987" y="124.55357142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="groupcity" width="427" height="249.5"/>
+        <image name="homeSearchIcon" width="27.5" height="28.5"/>
+        <image name="homeWriteIcon" width="21" height="21"/>
+    </resources>
+</document>

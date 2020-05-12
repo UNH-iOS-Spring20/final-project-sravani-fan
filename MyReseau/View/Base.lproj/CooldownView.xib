@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CooldownView" customModule="myreseau" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="nge-da-hm1" id="e1M-85-Rn2"/>
+                <outlet property="countDownLabel" destination="56Y-l4-jAz" id="Z7Y-95-ngk"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="nge-da-hm1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="56Y-l4-jAz">
+                    <rect key="frame" x="122" y="74" width="76.5" height="36"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Continue to post messages after the countdown." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Knn-TZ-OAA">
+                    <rect key="frame" x="20" y="150" width="280" height="43"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1kS-E7-x0P">
+                    <rect key="frame" x="145" y="238" width="30" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                    <state key="normal" title="ok">
+                        <color key="titleColor" red="1" green="0.40784313725490196" blue="0.41960784313725491" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="closeAction:" destination="-1" eventType="touchUpInside" id="by5-CR-nlI"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="Knn-TZ-OAA" firstAttribute="leading" secondItem="yWC-s3-UbJ" secondAttribute="leading" constant="20" id="0eO-dl-J6F"/>
+                <constraint firstItem="56Y-l4-jAz" firstAttribute="centerX" secondItem="nge-da-hm1" secondAttribute="centerX" id="iwl-ho-7bv"/>
+                <constraint firstItem="56Y-l4-jAz" firstAttribute="top" secondItem="yWC-s3-UbJ" secondAttribute="top" constant="30" id="kci-2k-ApJ"/>
+                <constraint firstAttribute="trailing" secondItem="Knn-TZ-OAA" secondAttribute="trailing" constant="20" id="lvu-RD-yOL"/>
+                <constraint firstItem="Knn-TZ-OAA" firstAttribute="top" secondItem="56Y-l4-jAz" secondAttribute="bottom" constant="40" id="uBp-h8-MXj"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="yWC-s3-UbJ"/>
+            <point key="canvasLocation" x="-33" y="97"/>
+        </view>
+    </objects>
+</document>

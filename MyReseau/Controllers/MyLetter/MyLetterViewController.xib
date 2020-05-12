@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyLetterViewController" customModule="myreseau" customModuleProvider="target">
+            <connections>
+                <outlet property="emptyView" destination="oCO-wn-KdT" id="Q6c-oB-lgV"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oCO-wn-KdT">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="letterEmptyIcon" translatesAutoresizingMaskIntoConstraints="NO" id="gXT-CP-Rnl">
+                            <rect key="frame" x="155.5" y="147" width="103" height="72"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="103" id="eEi-qV-iQR"/>
+                                <constraint firstAttribute="height" constant="72" id="tqZ-Nr-fAo"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You haven't received any letters yet." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jrJ-GH-bBV">
+                            <rect key="frame" x="61.5" y="242" width="291" height="22"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="gXT-CP-Rnl" firstAttribute="top" secondItem="oCO-wn-KdT" secondAttribute="top" constant="147" id="8hv-ia-E3r"/>
+                        <constraint firstItem="gXT-CP-Rnl" firstAttribute="centerX" secondItem="oCO-wn-KdT" secondAttribute="centerX" id="bHF-pG-qjK"/>
+                        <constraint firstItem="jrJ-GH-bBV" firstAttribute="centerX" secondItem="oCO-wn-KdT" secondAttribute="centerX" id="lgo-0U-6TS"/>
+                        <constraint firstItem="jrJ-GH-bBV" firstAttribute="top" secondItem="gXT-CP-Rnl" secondAttribute="bottom" constant="23" id="q3b-W7-Ncz"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="oCO-wn-KdT" secondAttribute="trailing" id="Gvq-hG-hI6"/>
+                <constraint firstItem="oCO-wn-KdT" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="J5C-ih-EAG"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="oCO-wn-KdT" secondAttribute="bottom" id="pkH-Ml-2uA"/>
+                <constraint firstItem="oCO-wn-KdT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="tvm-QA-jnn"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="132" y="127"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="letterEmptyIcon" width="103" height="72"/>
+    </resources>
+</document>

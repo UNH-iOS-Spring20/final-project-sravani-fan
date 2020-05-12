@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EditLookingForView" customModule="myreseau" customModuleProvider="target">
+            <connections>
+                <outlet property="backgroundView" destination="Dcd-2Q-B1L" id="6H4-6P-UKP"/>
+                <outlet property="bothButton" destination="uI6-Ib-oEN" id="P6j-Wx-nBN"/>
+                <outlet property="classmates" destination="CR2-Lz-j5E" id="yY8-oS-b5n"/>
+                <outlet property="contentView" destination="Oqo-jr-Gpj" id="Bha-bE-Vnx"/>
+                <outlet property="friendsBtn" destination="U6g-2w-REp" id="77H-8c-Oot"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Dcd-2Q-B1L">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oqo-jr-Gpj">
+                    <rect key="frame" x="31" y="124" width="352" height="500"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I am looking for" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CkS-Uc-PDZ">
+                            <rect key="frame" x="109.5" y="45" width="133" height="21"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U6g-2w-REp">
+                            <rect key="frame" x="137.5" y="206" width="77" height="35"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="77" id="HoS-wY-5a5"/>
+                                <constraint firstAttribute="height" constant="35" id="rwW-xE-VHR"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="friends ">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <real key="value" value="17.5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="buttonAction:" destination="-1" eventType="touchUpInside" id="2cB-sV-1PI"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CR2-Lz-j5E">
+                            <rect key="frame" x="124.5" y="270" width="103" height="35"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="103" id="0zo-4y-kvy"/>
+                                <constraint firstAttribute="height" constant="35" id="6aF-zg-pkw"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="classmates">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <real key="value" value="17.5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="buttonAction:" destination="-1" eventType="touchUpInside" id="B7a-U3-TJS"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uI6-Ib-oEN">
+                            <rect key="frame" x="88.5" y="334" width="175" height="35"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="175" id="RZH-EO-h23"/>
+                                <constraint firstAttribute="height" constant="35" id="e4g-e7-sZZ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="classmates and friends">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <real key="value" value="17.5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="buttonAction:" destination="-1" eventType="touchUpInside" id="mbp-rq-fu1"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="CkS-Uc-PDZ" firstAttribute="centerX" secondItem="Oqo-jr-Gpj" secondAttribute="centerX" id="Dsr-Ov-af5"/>
+                        <constraint firstItem="uI6-Ib-oEN" firstAttribute="top" secondItem="CR2-Lz-j5E" secondAttribute="bottom" constant="29" id="OmD-Et-9RX"/>
+                        <constraint firstItem="uI6-Ib-oEN" firstAttribute="centerX" secondItem="Oqo-jr-Gpj" secondAttribute="centerX" id="R6N-aV-jZO"/>
+                        <constraint firstAttribute="width" constant="352" id="XbG-ED-JEG"/>
+                        <constraint firstItem="U6g-2w-REp" firstAttribute="top" secondItem="CkS-Uc-PDZ" secondAttribute="bottom" constant="140" id="dYO-kN-izk"/>
+                        <constraint firstItem="CR2-Lz-j5E" firstAttribute="centerX" secondItem="Oqo-jr-Gpj" secondAttribute="centerX" id="gnY-BE-hI5"/>
+                        <constraint firstItem="CkS-Uc-PDZ" firstAttribute="top" secondItem="Oqo-jr-Gpj" secondAttribute="top" constant="45" id="hP7-3n-4Wy"/>
+                        <constraint firstAttribute="height" constant="500" id="l8z-tf-JmG"/>
+                        <constraint firstItem="CR2-Lz-j5E" firstAttribute="top" secondItem="U6g-2w-REp" secondAttribute="bottom" constant="29" id="xJH-5V-Idm"/>
+                        <constraint firstItem="U6g-2w-REp" firstAttribute="centerX" secondItem="Oqo-jr-Gpj" secondAttribute="centerX" id="y1Z-fk-Y2a"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="Oqo-jr-Gpj" firstAttribute="centerX" secondItem="Dcd-2Q-B1L" secondAttribute="centerX" id="9UU-d5-GVO"/>
+                <constraint firstItem="Oqo-jr-Gpj" firstAttribute="top" secondItem="jLS-Zf-Fcy" secondAttribute="top" constant="80" id="mCP-RQ-g9I"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="jLS-Zf-Fcy"/>
+            <point key="canvasLocation" x="130" y="-274"/>
+        </view>
+    </objects>
+</document>

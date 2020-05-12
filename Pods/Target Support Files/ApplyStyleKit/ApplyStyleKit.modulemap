@@ -1,0 +1,6 @@
+framework module ApplyStyleKit {
+  umbrella header "ApplyStyleKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
